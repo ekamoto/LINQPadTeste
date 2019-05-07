@@ -18,18 +18,33 @@ void Main()
 	
 	}
 	
-	// Se colocar ToList() ele enumera o enumerável apenas uma vez
+	Console.WriteLine("Teste1");
+	// Se colocar ToList() ele enumera o enumerável apenas uma vez, e chama a função Pessoa50 somente uma vez
 	var nome50 = nomes.Where(t=>t.nome.Equals("leandro_50") && t.Pessoa50());
 	
+	Console.WriteLine("Teste2");
 	// Enumerou o Enumerável
 	Console.WriteLine("Nome50: " + nome50.First().nome); // Materializa primeira vez
 	
+	Console.WriteLine("Teste3");
 	// Enumerou o Enumerável Duas vezes Ouuu Merda
 	Console.WriteLine("Email50: " + nome50.First().email); // Materializa segunda vez
 	
+	Console.WriteLine("Teste4");
 	if(nome50.Any()){} // Materializa terceira vez
 	
+	Console.WriteLine("Teste5");
 	var emailBuscado = nome50.Where(t=>t.email.Equals("buscado@gmail.com")).FirstOrDefault(); // Materializa quarta vez
+	
+	Console.WriteLine("Teste6");
+	nome50.Count();// Materializa quinta vez
+	
+	Console.WriteLine("Teste7");
+	var primeiro = nome50.SingleOrDefault();// Materializa sexta vez
+	
+	Console.WriteLine("Teste8");
+	// Não Materializa
+	var emailBuscado2 = nome50.Where(t=>t.email.Equals("buscado@gmail.com")); // Não Materializa
 	
 }
 	

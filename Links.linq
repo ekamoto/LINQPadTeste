@@ -12,3 +12,6 @@ https://mva.microsoft.com/pt-br/training-courses/conceitos-bsicos-do-desenvolvim
 
 Github do aspnet oficial
 https://github.com/aspnet/Home
+
+// Comunidade Brasileira de Sistemas de Informação
+http://www.cbsi.net.br/

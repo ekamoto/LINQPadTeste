@@ -29,7 +29,6 @@ class Pessoa {
 		this.email = email;
 		this.id = id;
 		//Console.WriteLine("Construtor: "+ nome);
-		
 	}
 	
 	public bool Pessoa5(int id)
